@@ -154,7 +154,7 @@ var Snake = (function () {
         ctx.fillText("(space) pausar", 24, 374);
       }
 
-      ctx.fillStyle = 'yellow';
+      ctx.fillStyle = 'orange';
       for (var i = 0; i < trail.length - 1; i++) {
         ctx.fillRect(trail[i].x * gridSize + 1, trail[i].y * gridSize + 1, gridSize - 2, gridSize - 2);
 
@@ -162,7 +162,7 @@ var Snake = (function () {
         if (!stopped && trail[i].x == player.x && trail[i].y == player.y) {
           game.reset();
         }
-        ctx.fillStyle = 'purple';
+        ctx.fillStyle = 'red';
       }
       ctx.fillRect(trail[trail.length - 1].x * gridSize + 1, trail[trail.length - 1].y * gridSize + 1, gridSize - 2, gridSize - 2);
 
