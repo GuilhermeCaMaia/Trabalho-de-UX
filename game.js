@@ -162,7 +162,7 @@ var Snake = (function () {
         if (!stopped && trail[i].x == player.x && trail[i].y == player.y) {
           game.reset();
         }
-        ctx.fillStyle = 'pink';
+        ctx.fillStyle = 'purple';
       }
       ctx.fillRect(trail[trail.length - 1].x * gridSize + 1, trail[trail.length - 1].y * gridSize + 1, gridSize - 2, gridSize - 2);
 
